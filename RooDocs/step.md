@@ -1,15 +1,16 @@
 # 実装計画 (step.md)
 
-## Step 1: 環境構築と最小限のページ表示
+## Step 1: 環境構築と最小限のページ表示(done)
 
 - **概要**: Vite + Reactのプロジェクトを作成し、最小限のHTML/CSS/JavaScriptでトップページを表示する。
 - **確認方法**:
-    - `npm run dev`を実行し、ブラウザでページが表示されることを確認する。(done)
+    - `npm run dev`を実行し、ブラウザでページが表示されることを確認する。
     - 表示される内容は、仮のタイトルと簡単なメッセージで良い。
 
-## Step 2: GitHub Pagesへのデプロイ
+## Step 2: GitHub Pagesへのデプロイ(done)
 
 - **概要**: GitHubリポジトリを作成し、Step 1で作成したページをGitHub Pagesにデプロイする。
+  - GitHubリポジトリの作成はユーザーが実施。
 - **確認方法**:
     - GitHub PagesのURLにアクセスし、Step 1と同じ内容が表示されることを確認する。
 

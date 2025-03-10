@@ -71,4 +71,7 @@
     *   `build.outDir`は、`/docs`に設定する。
 *   `package.json`に`homepage`プロパティを追加する。
     *   `"homepage": "https://<GitHubのユーザー名>.github.io/<リポジトリ名>/"`
+*   GitHub Pagesにデプロイする前に、`npm run build`を実行して`docs`フォルダを作成する必要がある。
 *   GitHub Pagesの設定で、Sourceを`main`ブランチ、ディレクトリを`/docs`に設定する。
+*   ローカルの変更をGitHubにpushする前に、リモートリポジトリが設定されていることを確認する(`git remote -v`)。
+*   ローカルの変更をGitHubにpushする際に、ローカルブランチがリモートブランチより遅れている場合は、`git pull`を実行してからpushする。
