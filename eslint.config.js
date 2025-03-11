@@ -35,4 +35,20 @@ export default [
       'react/react-in-jsx-scope': 'off', // React 17以降では不要
     },
   },
+  {
+    files: ['playwright.config.js'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
+      },
+    },
+  },
+  {
+    files: ['tests/**/*.js', 'tests-examples/**/*.js'],
+    languageOptions: {
+      globals: {
+        localStorage: 'readonly',
+      },
+    },
+  },
 ];

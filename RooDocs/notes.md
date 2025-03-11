@@ -1,30 +1,5 @@
 # 引き継ぎ資料 (notes.md)
 
-## プロジェクト開始時の実行手順
-
-- ユーザーから提供された`./RooDocs/spec.md`でアプリの仕様を確認する
-- `./RooDocs/design.md`の作成
-  - `./RooDocs/spec.md`の内容を元に、どのような設計でどのようなコードを書くか計画を記載する。
-  - `./RooDocs/spec.md`の情報は省略せず、そのまま使える部分はそのまま使っても良いので抜け漏れがないこと。
-  - その内容には機能要件・技術スタック・アーキテクチャ設計などを含む。
-  - 機能要件を満たす場合の実際の表示UIやデータの状態も具体例とともに記載すること。
-  - 具体的なコードやコマンドは書かないこと。
-  - 以下の例を参考に作成する。
-    @https://github.com/YuheiNakasaka/sprint-calendar/blob/main/README.md
-    @https://github.com/karaage0703/docubot/blob/main/docs/design.md
-- `./RooDocs/step.md`の作成
-  - `./RooDocs/design.md`のゴールに向けて実装計画を作成し記載する。
-  - 各ステップはなるべく細かい粒度で設定し、段階的に拡張するように設定する。
-  - 粒度の例：
-    - step1: 主に環境構築を目的とし、最小限のページを開発環境で表示。
-    - step2: githubと連携しgithub pagesでの表示確認。
-    - step3: ESLintとPrettierの導入・動作確認・dev/buildコマンドへの組み込み。
-    - step4: playwrightの導入とテスト実装(consoleエラー・警告の監視、表示内容のテスト)。
-  - step内で1つの機能を実装するとき、分割できそうならstep1-1,step1-2のように階層化しても良い。
-  - 各ステップにはステップの簡単な概要と、実装が正しく動作したかを確認する方法を必ず記載すること。
-  - デバッグはplaywright実行時にターミナルへ出力する情報を元に行うこと。
-  - そのためにplaywrightを導入後のステップではどのようなテストを書くかの概要を記載すること。
-
 ## 各ステップの実行手順
 
 - ステップ開始時
@@ -66,12 +41,3 @@
 - 開発者ツールのコンソールログやターミナルのログが読み取れない場合、ユーザーに具体的に指示して内容をコピーするよう指示すること。
 - コマンド実行時に`&amp;&amp;`ではなく`&&`を使用する。
 - `npm run dev` 中は同一ターミナルでテストが実行できないため、ユーザーに`npm run dev` の実行を依頼し、`npx playwright test` はRooが実行する。
-
-## GitHub Pages デプロイに関する注意事項
-
-- ViteプロジェクトをGitHub Pagesにデプロイする際は、`vite.config.js`に`base`と`build.outDir`の設定が必要。
-  - `base`は、`./` (相対パス)に設定する。
-  - `build.outDir`は、`docs`に設定する。
-- `package.json`に`homepage`プロパティを追加する。
-  - `"homepage": "https://<GitHubのユーザー名>.github.io/<リポジトリ名>/"`
-- GitHub Pagesの設定で、Sourceを`main`ブランチ、ディレクトリを`/docs`に設定する。

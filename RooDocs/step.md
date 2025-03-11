@@ -21,7 +21,7 @@
   - `npm run lint`と`npm run format`を実行し、エラーや警告が出ないこと、コードが自動整形されることを確認する。
   - `npm run dev`と`npm run build`の実行前に、自動的にlintとformatが実行されるように設定する。
 
-## Step 4: Playwrightの導入と基本テスト
+## Step 4: Playwrightの導入と基本テスト(done)
 
 - **概要**: Playwrightを導入し、基本的なE2Eテストを実行できるようにする。
 - **確認方法**:
