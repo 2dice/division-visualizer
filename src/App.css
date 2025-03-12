@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+
+.group-division {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #646cff;
+}
+
+.remainder {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}

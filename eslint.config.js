@@ -19,6 +19,9 @@ export default [
           jsx: true,
         },
       },
+      globals: {
+        console: 'readonly',
+      },
     },
     plugins: {
       react,
