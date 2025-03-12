@@ -26,15 +26,6 @@
 - Playwrightを導入する目的は、ターミナル(PowerShell)のログをRooが直接読み取って自律的にデバッグを進めるため。
 - `npm run dev`での結果だけでなく、`npm run build`した結果とGithub Pagesでの表示も確認する必要がある。
 
-## 開発環境
-
-- Windows 10
-- PowerShell
-- npm
-- Git
-- GitHub
-- VSCode
-
 ## 開発環境特有の注意事項
 
 - ターミナルでのコマンド実行後、カーソル操作やエディタでの記入などの操作が必要な場合はユーザーに内容を指示すること。
